@@ -1,0 +1,11 @@
+{
+  "name": "intereactive-game",
+  "version": "1.0.0",
+  "description": "Interactive game app written using React + Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Kaarel Tinn",
+  "license": "ISC"
+}
