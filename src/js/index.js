@@ -1,12 +1,8 @@
-import Counter from './Counter'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Game from './components/Game'
 
-let counter = new Counter()
-
-let button = document.querySelector('.button')
-
-button.innerHTML = counter.getCount()
-
-button.addEventListener('click', () => {
-  counter.increment()
-  button.innerHTML = counter.getCount()
-})
+ReactDOM.render(
+  <Game />,
+  document.getElementById('app')
+);
