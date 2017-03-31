@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Game from './components/Game'
+import AppContainer from './containers/AppContainer'
 
 ReactDOM.render(
-  <Game />,
+  <AppContainer />,
   document.getElementById('app')
 );
