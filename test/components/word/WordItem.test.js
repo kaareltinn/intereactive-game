@@ -1,7 +1,7 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import WordItem from '../../src/js/components/WordItem'
+import WordItem from '../../../src/js/components/word/WordItem'
 
 describe('WordItem', () => {
   context('when guessed word does not match at all', () => {

@@ -1,12 +1,12 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import GuessItem from '../../src/js/components/GuessItem'
+import NumberItem from '../../../src/js/components/number/NumberItem'
 
-describe('GuessItem', () => {
+describe('NumberItem', () => {
   context('when guess and targetNumber are equal', () => {
-    const guessItem = shallow(
-      <GuessItem
+    const numberItem = shallow(
+      <NumberItem
         guess={1}
         targetNumber={1}
         message={'was correct'}
@@ -14,13 +14,13 @@ describe('GuessItem', () => {
     )
 
     it('renders with className="correct"', () => {
-      expect(guessItem).to.have.className('correct')
+      expect(numberItem).to.have.className('correct')
     })
   })
 
   context('when guess and targetNumber are not equal', () => {
-    const guessItem = shallow(
-      <GuessItem
+    const numberItem = shallow(
+      <NumberItem
         guess={1}
         targetNumber={2}
         message={'was lower than target'}
@@ -28,7 +28,7 @@ describe('GuessItem', () => {
     )
 
     it('renders with className="incorrect"', () => {
-      expect(guessItem).to.have.className('incorrect')
+      expect(numberItem).to.have.className('incorrect')
     })
   })
 })
