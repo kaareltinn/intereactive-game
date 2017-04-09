@@ -19,10 +19,7 @@ const WordList = (props) => {
 }
 
 WordList.propTypes = {
-  guesses: React.PropTypes.arrayOf(React.PropTypes.shape({
-    guess: React.PropTypes.string,
-    targetWord: React.PropTypes.string
-  })).isRequired,
+  guesses: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
   targetWord: React.PropTypes.string.isRequired,
 };
 

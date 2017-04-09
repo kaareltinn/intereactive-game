@@ -1,10 +1,10 @@
 import React from 'react'
-import GuessItem from './GuessItem'
+import NumberItem from './NumberItem'
 
-const GuessList = (props) => {
+const NumberList = (props) => {
   const guesses = props.guesses.map((guess, key) => {
     return (
-      <GuessItem
+      <NumberItem
         guess={guess.guess}
         message={guess.message}
         targetNumber={props.targetNumber}
@@ -19,7 +19,7 @@ const GuessList = (props) => {
   )
 }
 
-GuessList.propTypes = {
+NumberList.propTypes = {
   guesses: React.PropTypes.arrayOf(React.PropTypes.shape({
     guess: React.PropTypes.number,
     message: React.PropTypes.string,
@@ -28,4 +28,4 @@ GuessList.propTypes = {
   targetNumber: React.PropTypes.number.isRequired,
 };
 
-export default GuessList
+export default NumberList

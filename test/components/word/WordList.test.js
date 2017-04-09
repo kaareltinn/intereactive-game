@@ -1,8 +1,8 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import WordList from '../../src/js/components/WordList'
-import WordItem from '../../src/js/components/WordItem'
+import WordList from '../../../src/js/components/word/WordList'
+import WordItem from '../../../src/js/components/word/WordItem'
 
 describe('WordList', () => {
   context('when no guesses', () => {
